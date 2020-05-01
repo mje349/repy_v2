@@ -56,27 +56,11 @@ class ABFile():
         else:
             removefile(self.Afile)
 
+        #CHECK B
         if b_contents.startswith("S") and b_contents.endswith("E"):
             self.Bfile.close()
         else:
             removefile(self.Bfile)
-
-'''
-        contents_of_A = self.Afn.readat(None, 0)
-        contents_of_B = self.Bfn.readat(None, 0)
-
-        #CHECK A
-        if contents_of_A.startswith("S") :
-            if contents_of_A.endswith("E"):
-                self.Afn.close()
-        removefile(self.Afn)
-
-        #CHECK B
-        if contents_of_B.startswith("S"):
-            if contents_of_B.endswith("E"):
-                self.Bfn.close()
-        removefile(self.Bfn)
-'''
 
 
 def ABopenfile(filename, create):
